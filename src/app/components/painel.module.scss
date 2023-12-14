@@ -1,0 +1,47 @@
+@import '../../styles/variables.module.scss';
+
+.box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -305px;
+    z-index: 1;
+}
+
+.container {
+    width: 434px;
+    height: 509px;
+    background-color: $color-tertiary;
+}
+
+.title {
+    color: $color-primary;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 71px;
+    padding-top: 91px;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    color: $color-primary;
+    font-size: 2.25rem;
+    font-weight: 500;
+    padding-left: 71px;
+    padding-top: 239px;
+}
+
+.isPrincipal {
+    width: 434px;
+    height: 541px; 
+    background-color: $color-secondary; 
+    
+    .title {
+        color: $color-white;
+    }
+    .subtitle {
+        color: $color-white;
+    }
+}

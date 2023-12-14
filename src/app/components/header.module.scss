@@ -1,0 +1,65 @@
+@import '../../styles/variables.module.scss';
+
+.header {
+    width: 100%;
+    height: 500px;
+    color: $color-white;
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    nav {
+        width: 68%;
+        height: 2.1875rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 3.625rem;
+
+        .navbarLeft {
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        a {
+            color: $color-white;
+            font-size: 1rem;
+            margin-left: 2.8rem;
+            
+            text-decoration: none;
+        }
+    
+        a:hover {
+            color: $color-button-hover;
+        }
+
+        button {
+            display: inline-flex;
+            padding: 12px 18px;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 7px;
+            background: $color-button-right;
+            color: $color-white;
+            cursor: pointer;
+        }
+
+        .iconeMenu {
+            margin-right: 5px;
+        }
+    }
+
+    .selo {
+        position: absolute;
+        bottom: 35px;
+        left: 47px;
+    }
+
+}
+
+
+
