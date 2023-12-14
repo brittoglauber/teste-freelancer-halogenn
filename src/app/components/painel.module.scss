@@ -9,9 +9,11 @@
 }
 
 .container {
-    width: 434px;
+    width: 22%;
+    max-width: 434px;
     height: 509px;
     background-color: $color-tertiary;
+    
 }
 
 .title {
@@ -19,7 +21,7 @@
     font-size: 1.125rem;
     font-weight: 700;
     text-transform: uppercase;
-    padding-left: 71px;
+    padding-left: 16%;
     padding-top: 91px;
 }
 
@@ -29,12 +31,20 @@
     color: $color-primary;
     font-size: 2.25rem;
     font-weight: 500;
-    padding-left: 71px;
+    padding-left: 16%;
     padding-top: 239px;
+
+    .frames {
+        display: none;
+    }
+
+    .thirdChild {
+        margin-top: 40px;
+    }
 }
 
 .isPrincipal {
-    width: 434px;
+    width: 22%;
     height: 541px; 
     background-color: $color-secondary; 
     
@@ -43,5 +53,180 @@
     }
     .subtitle {
         color: $color-white;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
+    .container {
+        width: 24%;
+        max-width: 434px;
+
+        .title {
+            font-size: 1.125rem;
+        }
+        
+        .subtitle {
+            font-size: 1.56rem;
+    
+            .thirdChild {
+                margin-top: 46px;
+            }
+        }
+        
+    }
+
+    .isPrincipal {
+        width: 24%;
+        max-width: 434px;
+
+        .title {
+            font-size: 1.125rem;
+        }
+        
+        .subtitle {
+            font-size: 1.56rem;
+    
+            .thirdChild {
+                margin-top: 46px;
+            }
+        }
+    }
+   
+}
+
+
+@media screen and (max-width: 1430px) {
+    .container {
+        width: 26%;
+    }
+
+    .isPrincipal {
+        width: 26%;
+    }
+}
+
+@media screen and (max-width: 1218px) {
+    .container {
+        width: 28%;
+    }
+
+    .isPrincipal {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .container {
+       
+
+        .title {
+            font-size: 1.125rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+    
+            .thirdChild {
+                margin-top: 46px;
+            }
+        }
+        
+    }
+
+    .isPrincipal {
+        
+        .title {
+            font-size: 1.125rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+    
+            .thirdChild {
+                margin-top: 46px;
+            }
+        }
+    }
+   
+}
+
+@media screen and (max-width: 600px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+
+        .container {
+            width: 100%;
+            height: 115px;
+            max-width: 600px;
+            flex-direction: row;
+    
+            .title {
+                display: none;
+            }
+            
+            .subtitle {
+                
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1.125rem;
+                padding-left: 10px;
+                padding-top: 20px;
+
+                .sub {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                p {
+                    margin-left: 22px;
+                }
+
+                .frames {
+                    display: block;
+                }
+    
+            }
+            
+        }
+    
+        .isPrincipal {
+            width: 100%;
+            height: 115px;
+            max-width: 600px;
+    
+            .title {
+                display: none;
+            }
+            
+            .subtitle {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-size: 1.125rem;
+                padding-left: 10px;
+                padding-top: 20px;
+
+                .sub {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                p {
+                    margin-left: 22px;
+                }
+
+                .frames {
+                    display: block;
+                }
+            }
+        }
+
     }
 }

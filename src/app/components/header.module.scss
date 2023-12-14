@@ -9,6 +9,28 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    
+    .subMobile {
+        display: none;
+    }
+
+    .textMobile {
+        display: none;
+    }
+
+
+    .menuHamburger {
+        display: none;
+    }
+
+    .comp {
+        display: none;
+    }
+
+    .menuIcon {
+        display: none;
+    }
+
     nav {
         width: 68%;
         height: 2.1875rem;
@@ -17,6 +39,7 @@
         justify-content: space-between;
         margin-top: 3.625rem;
 
+        
         .navbarLeft {
             display: inline-flex;
             align-items: center;
@@ -61,5 +84,130 @@
 
 }
 
+@media screen and (max-width: 1600px) {
+    .header {
+        nav {
+            width: 74%;
+        }
+    }
 
+    .selo {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1430px) {
+    .header {
+        nav {
+            width: 74%;
+            a {
+                margin-left: 1.25rem;
+            }
+    
+            button {
+                padding: 10px 14px;
+            }
+        }
+    }
+
+    .selo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1218px) {
+    .header {
+        nav {
+            width: 84%;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+       nav {
+        width: 90%;
+        
+        .logo {
+            display: none;
+        }
+       }
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .header {
+        height: 844px;
+        align-items: flex-start;
+        nav {
+         width: 90%;
+         margin: 50px auto 0px;
+         .navbarLeft {
+             display: none;
+         }
+ 
+         .budgetButton {
+             display: none;
+         }
+     
+         .menuHamburger {
+             display: block; 
+             flex-direction: column;
+         }
+ 
+         .menuIcon {
+             display: flex;
+             justify-content: space-between;
+             width: 100%;
+
+             .logo {
+                display: block;
+             }
+         }
+     
+         .hideNav {
+             display: none; // Esconde os links da barra de navegação quando o menu hamburguer estiver aberto
+         }
+        }
+
+
+        .subMobile {
+            display: block;
+            width: 302px;
+            height: 160px;
+            margin-top: 112px;
+            margin-left: 34px;
+            p {
+                font-size: 2rem;
+                line-height: 2.5rem;
+    
+                span {
+                    color: $color-button-hover;
+                }
+            }
+        }
+    
+        .textMobile {
+            display: block;
+            width: 231px;
+            height: 125px;
+            margin-top: 10px;
+            margin-left: 34px;
+            border: 1px solid ridge;
+            p {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        .comp {
+            display: block;
+            margin-top: 190px;
+            align-self: center;
+        }
+     }
+
+   
+}
 

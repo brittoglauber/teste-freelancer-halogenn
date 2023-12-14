@@ -16,7 +16,7 @@ export const DATA_CARD = [
       name: 'Produto 2',
       price: 20,
       rating: 4
-  },
+  }, 
   {
       id: 3,
       image: 'https://s3-alpha-sig.figma.com/img/9fc7/0e6f/45f487ec1065af09b215bd83c238c89f?Expires=1703462400&Signature=RXBIWqscF8Om09z2mMcw0lDJysKuLvr7fplKZ1BjcRgosdjsOlC1bpvTGr4AuaoQwotN5X1Oj2HHYLnCCcCm~gRtd6RzeVgblkEj9XCbM~OrVLqImsO7Kw4~4WBXIEincvGOnEgeTedBSb1-NphP5RKXgKd077aTKI3P4UB9EAcq9mYWCcD7X3BEwaOosV-RUXtoiDiyrfMRmAqnwfwERN2XgWBgrWsyYQ9fi3mDhmL2FGBS31w8bWRwSxh9g~N43WNxKra6ruUexQZWDuRntPo6w8Skirp9Q38jbc8KFfU1FICHP5dwCVvV-YDJ4UQZht0G4bCUOGx9kQPd7SHjbg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',

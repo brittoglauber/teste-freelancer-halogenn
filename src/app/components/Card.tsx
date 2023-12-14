@@ -1,6 +1,6 @@
-import Image from "next/image";
 import styles from "../components/card.module.scss";
-
+import selo from '../../assets/svg/selo.svg';
+import Image from "next/image";
 
 export interface ProductProps {
     id: number,
@@ -27,6 +27,15 @@ export default function Card({produtos}: {produtos: ProductProps[]}) {
                             </div>
                         </div>
                     ))}
+
+                    <div className={styles.selo}>
+                        <Image 
+                            src={selo}
+                            alt='selo'
+                            width={186}
+                            height={186}
+                        />
+                    </div>
                 </div>            
             </div>
         </div>

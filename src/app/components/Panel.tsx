@@ -1,7 +1,9 @@
 import Image from "next/image";
-import styles from "../components/painel.module.scss"
+import styles from "../components/painel.module.scss";
 import tubo from "../../assets/svg/tubo.svg";
-import bottle from "../../assets/svg/bottle.svg"
+import bottle from "../../assets/svg/bottle.svg";
+import frame from "../../assets/svg/frame.svg";
+import tool from "../../assets/svg/tool.svg";
 
 export default function Panel() {
 
@@ -11,13 +13,23 @@ export default function Panel() {
                 <div className={styles.title}>Produto</div>
 
                 <div className={styles.subtitle}>
+                    <div className={styles.sub}>
+                        <Image
+                            width={32}
+                            height={32}
+                            src={tubo}
+                            alt="Tubo de ensaio"
+                        />
+                        <p>Vidrarias e Equipamentos</p>
+                    </div>
+
                     <Image
-                        width={32}
-                        height={32}
-                        src={tubo}
-                        alt="Tubo de ensaio"
+                        width={100}
+                        height={69}
+                        src={frame}
+                        alt="Frames"
+                        className={styles.frames}
                     />
-                    <p>Vidrarias e Equipamentos</p>
                 </div>
             </section>
 
@@ -25,28 +37,56 @@ export default function Panel() {
                 <div className={styles.title}>Químicos</div>
 
                 <div className={styles.subtitle}>
-                    <div className="repeated-icons">
-                        <Image
-                        width={16}
-                        height={36}
-                        src={bottle}
-                        alt="Garrafa"
-                        />
-                        <Image
-                            width={9}
-                            height={20}
+                    <div>
+                        <div className={styles.sub}>
+                            <Image
+                            width={16}
+                            height={36}
                             src={bottle}
                             alt="Garrafa"
-                        />
+                            />
+                            <Image
+                                width={9}
+                                height={20}
+                                src={bottle}
+                                alt="Garrafa"
+                            />
+                            <p>Materiais <br /> Químicos</p>
+                        </div>
                     </div>
-                    <p>Materiais <br /> Químicos</p>
+                    <Image
+                        width={100}
+                        height={69}
+                        src={frame}
+                        alt="Frames"
+                        className={styles.frames}
+                    />
+                    
                 </div>
             </section>
 
             <section className={styles.container}>
                 <div className={styles.title}>Laboratórios</div>
                 <div className={styles.subtitle}>
-                    <p>Ferramentas e utensílios</p>
+
+                    <div className={styles.sub}>
+                        <Image
+                            width={32}
+                            height={36}
+                            src={tool}
+                            alt="Ferramenta"
+                        />
+                        <p>Ferramentas e utensílios</p>
+                    </div>
+                    
+
+                    <Image
+                        width={100}
+                        height={69}
+                        src={frame}
+                        alt="Frames"
+                        className={styles.frames}
+                    />
                 </div>
             </section>
         </div>
