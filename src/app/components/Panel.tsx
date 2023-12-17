@@ -4,11 +4,16 @@ import tubo from "../../assets/svg/tubo.svg";
 import bottle from "../../assets/svg/bottle.svg";
 import frame from "../../assets/svg/frame.svg";
 import tool from "../../assets/svg/tool.svg";
+import { connect } from "react-redux";
 
-export default function Panel() {
+interface PanelProps {
+    showPanel: boolean;
+}
+
+export function Panel({ showPanel }: PanelProps) {
 
     return (
-        <div className={styles.box}>
+        <div style={{ display: showPanel ? 'flex' : 'none' }} className={styles.box}>
             <section className={styles.container}>
                 <div className={styles.title}>Produto</div>
 
@@ -92,3 +97,11 @@ export default function Panel() {
         </div>
     )
 }
+
+const mapStateToProps = (state: any) => {
+    return {
+      showPanel: state.panel.showPanel, // Supondo que seu estado no Redux seja assim
+    };
+  };
+
+export default connect(mapStateToProps)(Panel);

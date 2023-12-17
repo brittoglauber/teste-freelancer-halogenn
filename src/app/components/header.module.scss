@@ -27,12 +27,21 @@
         display: none;
     }
 
+    .comp2 {
+        width: 311px;
+        height: 343.022px;
+        position: absolute;
+        top: -66px;
+        right: -38px;
+    }
+
     .menuIcon {
         display: none;
     }
 
     nav {
         width: 68%;
+        max-width: 1302px;
         height: 2.1875rem;
         display: inline-flex;
         align-items: center;
@@ -43,9 +52,18 @@
         .navbarLeft {
             display: inline-flex;
             align-items: center;
+
+            .arrowIcon {
+                margin-left: 5px;
+                
+            }
         }
         
         a {
+            
+            display: flex;
+            align-items: center;
+            
             color: $color-white;
             font-size: 1rem;
             margin-left: 2.8rem;
@@ -92,6 +110,10 @@
     }
 
     .selo {
+        display: none;
+    }
+
+    .comp2 {
         display: none;
     }
 }
@@ -152,8 +174,9 @@
          }
      
          .menuHamburger {
-             display: block; 
+             display: flex; 
              flex-direction: column;
+             align-items: flex-end;
          }
  
          .menuIcon {
