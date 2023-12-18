@@ -59,3 +59,7 @@ npm run dev
 Acesso Local: A aplicação estará disponível localmente no endereço 
 
 ## http://localhost:3000
+
+![Captura de tela 2023-12-18 101035](https://github.com/brittoglauber/teste-freelancer-halogenn/assets/93626678/71fb3561-8bc9-4d12-b3a5-ad2a3954052f)
+
+![Captura de tela 2023-12-18 102700](https://github.com/brittoglauber/teste-freelancer-halogenn/assets/93626678/10bcf386-3067-46ce-9f40-bd9c58f4873f)
